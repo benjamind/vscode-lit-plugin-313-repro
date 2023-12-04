@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"module": "ES2020",
+		"noEmit": true,
+		"lib": ["dom", "ES2022", "DOM.Iterable"],
+		"plugins": [
+			{
+				"name": "ts-lit-plugin",
+				"strict": true,
+				"rules": {
+					"no-missing-import": "error",
+					"no-unknown-tag-name": "error",
+					"no-unclosed-tag": "error",
+					"no-unknown-slot": "warning",
+					"no-invalid-css": "off",
+					"no-unknown-property": "off",
+					"no-unknown-attribute": "off",
+					"no-property-visibility-mismatch": "off"
+				}
+			}
+		],
+	},
+	"include": ["src/**/*.ts"]
+}
