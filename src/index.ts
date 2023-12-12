@@ -1,5 +1,8 @@
-import { html } from "lit";
-import "@spectrum-web-components/action-button/sp-action-button.js";
+import "./my-element";
+import "./my-other";
 
-const template = html` <sp-action-button foo="bar"></sp-action-button
-  ><sp-button></sp-button>`;
+// Pretending this is the Lit html function
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+declare const html: any;
+
+const template = html` <my-other></my-other><my-element></my-element>`;

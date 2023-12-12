@@ -2,7 +2,8 @@
   "name": "lit-plugin-repro-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "module": "index.js",
   "scripts": {
     "lit-analyzer": "lit-analyzer \"src/**/*.ts\""
   },
@@ -10,9 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@spectrum-web-components/action-button": "^0.40.0",
     "lit": "^3.1.0",
-    "lit-analyzer": "^2.0.1",
+    "lit-analyzer": "^2.0.2",
     "ts-lit-plugin": "^2.0.1",
     "typescript": "^5.3.2"
   }
