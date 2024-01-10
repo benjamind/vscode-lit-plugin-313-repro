@@ -2,8 +2,6 @@
 
 This demonstrates the error with vscode-lit-plugin causing spurious missing import warnings.
 
-The trigger seems to be any value for `module` in the `tsconfig.json`.
+To reproduce simply open the `index.ts` in VSCode with the plugin installed. If you remove one of the two element imports, you'll note all elements get marked as missing imports. When you re-add that import, only that one resolves while the others remain missing.
 
-To reproduce simply open the `index.ts` in VSCode with the plugin installed. If you then remove the `module` setting in the `tsconfig.json` the error goes away.
-
-You can also confirm this is a `vscode-lit-plugin` specific issue by running `pnpm run lit-analyzer` at the cli to run the analyzer standalone which works fine regardlss of module setting.
+You can also confirm this is a `vscode-lit-plugin` specific issue by running `pnpm run lit-analyzer` at the cli to run the analyzer standalone which works as expected.
