@@ -1,11 +1,10 @@
 {
 	"compilerOptions": {
 		"noEmit": true,
-		"lib": ["dom", "ES2022", "DOM.Iterable"],
 		"plugins": [
 			{
 				"name": "ts-lit-plugin",
-				"strict": false,
+				"strict": true,
 				"rules": {
 					"no-missing-import": "error",
 					"no-unknown-tag-name": "error",
@@ -17,10 +16,7 @@
 					"no-property-visibility-mismatch": "off"
 				}
 			}
-		],
-		"skipLibCheck": true,
-		"resolveJsonModule": true
+		]
 	},
 	"include": ["src/**/*.ts"],
-	"exclude": ["src/**/*.test.ts"]
 }
